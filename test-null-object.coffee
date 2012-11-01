@@ -38,7 +38,7 @@ describe 'null object pattern', ->
     tree.rightNode.should.eql subtree
     tree.size().should.equal 2
 
-  it 'a tree with a rightNode should have size two', ->
+  it 'a tree with a rightNode and a leftNode should have size three', ->
     subtree =  new Tree
     tree = new Tree(subtree, subtree)
     tree.leftNode.should.eql subtree
